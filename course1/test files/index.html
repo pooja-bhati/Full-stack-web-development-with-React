@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--BOOTSRAP CSS LINKS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/Users/apple/Desktop/webDevelopment/practice-bootstrap.css">
+    
+
+
+    <title>Ristorante Con Fusion</title>
+</head>
+<body>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container ">
+                
+                <a href="#" class="navbar-brand mr-auto order-sm-first "><img src="logo.png" class="img-fluid" height="41px" width="30px"></a>
+                <button id="drop" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav ">
+                        <li class="navbar-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link">Menu</a></li>
+                        <li class="navbar-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                     <span class="navbar-text ml-auto" id="LLoginButton">
+                        <a> Login</a>
+                     </span>
+
+                </div>
+                
+            </div>
+    </nav>
+
+    <div id="LoginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                            </div>
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label"> Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <!--JUMBOTRON-->
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-12 col-sm-5">
+                    <h2>Ristorante Con Fusion</h2>
+                    <p>We take inspirations from world's best cuisines, and <br> create a unique fusion experience. Our lipsmacking <br> creations will tickleyour culinary senses!</p>
+                </div>
+
+                <div class=" col-12 col-sm-3 align-self-center text-center"><img src="logo.png" class="img-fluid" ></div>
+                <button type="button" class="btn btn-warning  col-12 col-sm-3 offset-sm-1" id="reserve-button">
+                    Reserve Table
+                </button>
+                <!--span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                    <span class="fa fa-sign-in"></span> Login</a>
+                </span-->
+            </div>
+        </div>  
+    </header>
+
+    <!--<a href="#footer" class="btn btn-warning btn-lg" data-toggle="tooltip" data-html="true" role="button" title="Or call us at <br><strong>05869505</strong>" data-placement="bottom">Reserve Table</a>-->
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row align-items-center"><!--Row 1-->
+                            
+                            <div class="form-group col-sm-4">
+                                    <label for="text" class="col-12 col-sm-5 col-form-label ">Number of Guests</label>
+                            </div>
+                            
+                            <div class="form-check col-sm-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                 1
+                                </label>
+                            </div>
+
+                            <div class="form-check col-sm-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 2
+                                </label>
+                            </div>
+
+                            <div class="form-check col-sm-1 ">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 3
+                                </label>
+                            </div>
+
+                            <div class="form-check col-sm-1 ">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 4
+                                </label>
+                            </div>
+
+                            <div class="form-check col-sm-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 5
+                                </label>
+                            </div>
+
+                            <div class="form-check col-sm-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 6
+                                </label>
+                            </div>
+
+                    </div><!-- END of row 1-->
+                    
+                    <div class="form-row align-items-center">
+                        <div class="form-group col-sm-3">
+                            <label for="text" class="col-12 col-sm-8 col-form-label ">Section</label>
+                        </div>  
+                        <div class=" form-group btn-group btn-group-toggle col-sm-4" data-toggle="buttons">
+                            <label class="btn btn-success active col-sm-6 ">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> <small>NON-smoking</small>
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> <small>smoking</small>
+                            </label>
+                        </div>
+                    </div>
+                    
+              
+
+                    <div class="form-row align-items-center"> <!--row 3-->
+                             <div class="form-group col-sm-3">
+                                <label for="text" class="col-12 col-sm-8 col-form-label ">Date &amp time</label>
+                             </div>   
+                             <div class="col-9  col-sm-4 ">
+                                    <input type="text-center" class="form-control" id="Date" name="Date" placeholder="Date">
+                             </div>
+                             <div class="col-9  col-sm-4 ">
+                                    <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
+                             </div>
+                    </div>
+
+
+                  <!--end of row 3-->
+                    
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm " data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>        
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+    <!--BODY CONTENT-->
+    <div class="container"> 
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-10 order-sm-first order-last ">
+                <div class="media">
+                    <img src="uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0 col-8">UTHAPIZZA <span class="badge badge-danger ml-auto ">HOT</span><span class="badge badge-pill badge-secondary ml-sm-1 mr-2">$4.99</span></h2>
+                    <p class="d-none d-sm-block">A unique combination of Indian uthappam(pancake) and Italian pizza, topped with carignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo paneer.</p>
+                    </div>
+                </div>          
+            </div>
+            <div class="col col-sm-2 order-sm-last ">
+                <h2>Our Lipsmacking Culinary Creations</h2>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-9 order-sm-last ">
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend's Grand Buffet <span class="badge badge-danger ml-auto">NEW</span></h2>
+                    <p class="d-none d-sm-block">Featuring Mouth watering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly soft drinks. All just for $19.99 per head.</p>
+                    </div>
+                    <img src="uthappizza.png" class="d-flex ml-3 img-thumbnail align-self-center">
+                </div>      
+            </div>
+            <div class="col-12 col-sm-3 order-sm-first order-first ">
+                <h2>This Month's Promotions</h2>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-10 order-sm-first ">
+                <div class="media">
+                    <img src="alberto.png" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">FAIQA KAPOOR</h2>
+                        <H4>Executive Chef</H4>
+                    <p class="d-none d-sm-block">Award winning 3-star chef with 5 years experience with around the world experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-2 order-sm-last order-first ">
+                <h2>Meet Our Culinary Specialists</h2>
+            </div>
+        </div>
+    
+    </div>
+
+
+    <!--FORM
+    <div class="row row-content align-items-center " >
+            <div class="col-9 col-sm-6 offset-sm-3 border  ">
+                <form id="footer">
+                    <div class="form-group row bg-warning text-white" id="form-header">
+                        <h4 class="text-center align-items-center">Reserve a Table</h4>
+                    </div>
+            
+                    <div class="form-group row align-items-center ">
+                        <label for="text" class="col-12 col-sm-2 col-form-label ">Number of Guests</label>
+                            <div class="form-check col-sm-1 col-2 ml-1">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                 1
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-1 col-2">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 2
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-1 col-2">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 3
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-1 col-2">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 4
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-1 col-2">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 5
+                                </label>
+                            </div>
+                            <div class="form-check col-sm-1 col-3 ml-1 ">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                 6
+                                </label>
+                            </div>
+                    </div>
+
+                    <div class="form-group row ">
+                        <label for="text" class="col-12 col-sm-2 col-form-label ">Date &amp time</label>
+                            <div class="col-9  col-sm-4 ">
+                                <input type="text-center" class="form-control" id="Date" name="Date" placeholder="Date">
+                            </div>
+                        <div class="col-9  col-sm-4 ">
+                            <input type="text" class="form-control" id="Time" name="Time" placeholder="Time">
+                        </div>
+                    </div>
+
+                    <div class="form-group row ">
+                        <button type="button" class="btn btn-primary ml-3">Reserve</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+
+-->
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="footer" id="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our address</h5>
+                    <address class="address">
+                        121, Clear Street Bay Road <br>
+                        Clear Water Bay, kowloon <br>
+                        Hong Kong <br>
+                        <strong>Call:</strong> +094039583<br>
+                        <strong>Email:</strong> <a href="mailto:ristoranteconfusion@gmail.com">ristoranteconfusion@gmail.com</a> 
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Snapchat</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p> &copy Copyright 2018 Ristorante Con Fusion</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+<!--BOOTSTRAP JAVASCRIPT LINKS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <script type="text/javascript">
+                 $("#reserve-button").click(function(){
+                   $('#loginModal').modal('show')
+                 });
+
+                 $("#LLoginButton").click(function(){
+                   $('#LoginModal').modal('show')
+                  });
+    </script>
+</body>
+</html>
